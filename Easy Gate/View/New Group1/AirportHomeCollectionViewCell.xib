@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AirportHomeCollectionViewCell" id="oMh-so-e5l">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="112"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8e-Ep-JXM">
+                        <rect key="frame" x="0.0" y="0.0" width="106" height="112"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lph-f2-YYW">
+                                <rect key="frame" x="19.5" y="0.0" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Lph-f2-YYW" secondAttribute="height" multiplier="1:1" id="ez4-Cc-Qb2"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="k71-kp-4YT">
+                                <rect key="frame" x="0.0" y="67" width="106" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYQ-cM-3on">
+                                        <rect key="frame" x="0.0" y="0.0" width="106" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azf-aZ-79H">
+                                        <rect key="frame" x="0.0" y="25" width="106" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Lph-f2-YYW" firstAttribute="height" secondItem="Z8e-Ep-JXM" secondAttribute="height" multiplier="0.6" id="0wK-U4-9bt"/>
+                            <constraint firstItem="Lph-f2-YYW" firstAttribute="centerX" secondItem="Z8e-Ep-JXM" secondAttribute="centerX" id="5lx-bt-8Op"/>
+                            <constraint firstItem="k71-kp-4YT" firstAttribute="leading" secondItem="Z8e-Ep-JXM" secondAttribute="leading" id="IK3-nh-6FE"/>
+                            <constraint firstAttribute="trailing" secondItem="k71-kp-4YT" secondAttribute="trailing" id="Kwl-8X-4tQ"/>
+                            <constraint firstItem="Lph-f2-YYW" firstAttribute="top" secondItem="Z8e-Ep-JXM" secondAttribute="top" id="NVx-nk-tZC"/>
+                            <constraint firstItem="k71-kp-4YT" firstAttribute="top" secondItem="Lph-f2-YYW" secondAttribute="bottom" id="No7-5m-EEQ"/>
+                            <constraint firstAttribute="bottom" secondItem="k71-kp-4YT" secondAttribute="bottom" id="kd2-gk-LIE"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Z8e-Ep-JXM" firstAttribute="top" secondItem="oMh-so-e5l" secondAttribute="top" id="0n7-UJ-Qbk"/>
+                <constraint firstAttribute="trailing" secondItem="Z8e-Ep-JXM" secondAttribute="trailing" id="2VG-QI-hcf"/>
+                <constraint firstAttribute="bottom" secondItem="Z8e-Ep-JXM" secondAttribute="bottom" id="les-rF-Npe"/>
+                <constraint firstItem="Z8e-Ep-JXM" firstAttribute="leading" secondItem="oMh-so-e5l" secondAttribute="leading" id="wj3-4O-Tgc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="LGL-4k-GyM"/>
+            <size key="customSize" width="106" height="112"/>
+            <point key="canvasLocation" x="54" y="84"/>
+        </collectionViewCell>
+    </objects>
+</document>

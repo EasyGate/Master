@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hfm-Ff-4E9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash-->
+        <scene sceneID="fPl-6Z-SDo">
+            <objects>
+                <viewController storyboardIdentifier="Splash" id="q01-DT-NLo" customClass="Splash" customModule="Easy_Gate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Din-Dj-35B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fko-uH-B9h">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AirportSplah" translatesAutoresizingMaskIntoConstraints="NO" id="f9b-Ds-Icg">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="f9b-Ds-Icg" firstAttribute="leading" secondItem="fko-uH-B9h" secondAttribute="leading" id="9Vt-3W-UUe"/>
+                                    <constraint firstAttribute="bottom" secondItem="f9b-Ds-Icg" secondAttribute="bottom" id="KWY-rJ-8jy"/>
+                                    <constraint firstAttribute="trailing" secondItem="f9b-Ds-Icg" secondAttribute="trailing" id="VzQ-eb-wNn"/>
+                                    <constraint firstItem="f9b-Ds-Icg" firstAttribute="top" secondItem="fko-uH-B9h" secondAttribute="top" id="sCJ-Q1-Pzd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fko-uH-B9h" firstAttribute="top" secondItem="Din-Dj-35B" secondAttribute="top" id="15M-tA-JxH"/>
+                            <constraint firstItem="fko-uH-B9h" firstAttribute="leading" secondItem="RWb-qm-mrP" secondAttribute="leading" id="L2z-8t-Pn3"/>
+                            <constraint firstItem="RWb-qm-mrP" firstAttribute="bottom" secondItem="fko-uH-B9h" secondAttribute="bottom" id="TnR-7i-hGJ"/>
+                            <constraint firstItem="RWb-qm-mrP" firstAttribute="trailing" secondItem="fko-uH-B9h" secondAttribute="trailing" id="avH-Ox-oeM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RWb-qm-mrP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yqR-6q-5jj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsg-1K-Hn3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783.20000000000005" y="1807.6461769115444"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Vn-Mz-oY9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="hfm-Ff-4E9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="I9g-qq-B2w">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q01-DT-NLo" kind="relationship" relationship="rootViewController" id="4nr-fe-sNr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igG-lb-sdb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1722.4000000000001" y="1807.6461769115444"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AirportSplah" width="320" height="480"/>
+    </resources>
+</document>
