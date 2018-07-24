@@ -16,9 +16,20 @@ class HomeViewController: UIViewController {
     var AllAirport = ["Amman" , "Aqaba" , "London" , "Spain" , "Italy" , "Paris"]
     var filterdArray = [String]()
     
-    // MARK: - IBOutlet
+    // MARK: - IBOutle
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var AirportsSearchResulteTableView: UITableView!
+    
+    // MARK: - IBAction
+    @IBAction func AllAirportsPopUp(_ sender: UIButton) {
+        let PopUp = UIStoryboard(name: "Maine", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController")as! PopUpViewController
+        self.addChildViewController(PopUp)
+        PopUp.view.frame.size.width = self.view.frame.size.width / 1
+        PopUp.view.frame.size.height = self.view.frame.size.height / 1
+        self.view.addSubview(PopUp.view)
+        PopUp.didMove(toParentViewController: self)
+        
+    }
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {

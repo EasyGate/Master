@@ -77,6 +77,8 @@
 		8217E4FD20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E4FC20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift */; };
 		8217E4FF20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */; };
 		8217E50120FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */; };
+		821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */; };
+		821FA73D21072BA700F9A408 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FA73C21072BA700F9A408 /* PopUpViewController.swift */; };
 		82B447AB20FC7EB2004E6445 /* AirportsSearchResulteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B447AA20FC7EB2004E6445 /* AirportsSearchResulteCell.xib */; };
 		82B447AF20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */; };
 		82B447B120FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */; };
@@ -157,6 +159,8 @@
 		8217E4FC20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalServicesCollectionViewCell.swift; sourceTree = "<group>"; };
 		8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerTerminalsCollectionViewCell.swift; sourceTree = "<group>"; };
 		8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCompaniesCollectionViewCell.swift; sourceTree = "<group>"; };
+		821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCountrysPopUpTableViewCell.swift; sourceTree = "<group>"; };
+		821FA73C21072BA700F9A408 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		82B447AA20FC7EB2004E6445 /* AirportsSearchResulteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportsSearchResulteCell.xib; sourceTree = "<group>"; };
 		82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsSearchResulteControllerTableViewCell.swift; sourceTree = "<group>"; };
 		82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHomeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -378,6 +382,7 @@
 				8217E4FC20FF183200B7D89E /* TerminalServicesCollectionViewCell.swift */,
 				8217E4FE20FF3C4D00B7D89E /* PassengerTerminalsCollectionViewCell.swift */,
 				8217E50020FF4DF900B7D89E /* AllCompaniesCollectionViewCell.swift */,
+				821FA73A2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift */,
 			);
 			name = TableViewCells;
 			path = "New Group1";
@@ -514,6 +519,7 @@
 				82007E6620FB72A2009A1EF4 /* PassengerTerminalViewController.swift */,
 				82007E6820FB72EE009A1EF4 /* GeneralAviationViewController.swift */,
 				82007E6A20FB732B009A1EF4 /* AllCompaniesViewController.swift */,
+				821FA73C21072BA700F9A408 /* PopUpViewController.swift */,
 			);
 			path = Maine;
 			sourceTree = "<group>";
@@ -720,6 +726,7 @@
 				82007E1220FB5FC1009A1EF4 /* Styleguide.swift in Sources */,
 				82007DFA20FB5C68009A1EF4 /* DatePickerView.swift in Sources */,
 				82007E4320FB6272009A1EF4 /* TexitField+Util.swift in Sources */,
+				821FA73D21072BA700F9A408 /* PopUpViewController.swift in Sources */,
 				82007E4120FB626A009A1EF4 /* View+Util.swift in Sources */,
 				82007DF620FB5ADC009A1EF4 /* ScalableTextView.swift in Sources */,
 				82007E4F20FB64D3009A1EF4 /* LocationManager.swift in Sources */,
@@ -743,6 +750,7 @@
 				82007E5F20FB718A009A1EF4 /* HomeViewController.swift in Sources */,
 				82007E5B20FB675A009A1EF4 /* Splash.swift in Sources */,
 				82007E4B20FB64C5009A1EF4 /* Loader.swift in Sources */,
+				821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */,
 				82007E1A20FB6031009A1EF4 /* GlobalManager.swift in Sources */,
 				82007E0C20FB5EA6009A1EF4 /* ExampleService.swift in Sources */,
 				82007E6520FB7245009A1EF4 /* TerminalServicesViewController.swift in Sources */,
