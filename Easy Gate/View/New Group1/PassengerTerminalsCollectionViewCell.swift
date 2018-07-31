@@ -10,6 +10,7 @@ import UIKit
 
 class PassengerTerminalsCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutle
     @IBOutlet weak var TerminalImge: UIImageView!
     @IBOutlet weak var TerminalName: UILabel!
 }

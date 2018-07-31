@@ -31,6 +31,7 @@ class PassengerTerminalViewController: UIViewController {
         PassengerTerminalCollection.dataSource = self
     }
 }
+
     // MARK: - extensions
 
 extension PassengerTerminalViewController : UICollectionViewDataSource , UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {

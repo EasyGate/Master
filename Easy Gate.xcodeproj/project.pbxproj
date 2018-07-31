@@ -83,6 +83,7 @@
 		82B447AF20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */; };
 		82B447B120FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */; };
 		82B447B320FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B447B220FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib */; };
+		82E4931A211067B100D494B2 /* CurrencyConversionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E49319211067B100D494B2 /* CurrencyConversionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +166,7 @@
 		82B447AE20FC7FF0004E6445 /* AirportsSearchResulteControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsSearchResulteControllerTableViewCell.swift; sourceTree = "<group>"; };
 		82B447B020FCC9A7004E6445 /* AirportHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportHomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		82B447B220FCC9CA004E6445 /* AirportHomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		82E49319211067B100D494B2 /* CurrencyConversionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConversionViewController.swift; sourceTree = "<group>"; };
 		D5D121EB534B3D22C7855C2E /* Pods-Easy Gate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easy Gate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Easy Gate/Pods-Easy Gate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -520,6 +522,7 @@
 				82007E6820FB72EE009A1EF4 /* GeneralAviationViewController.swift */,
 				82007E6A20FB732B009A1EF4 /* AllCompaniesViewController.swift */,
 				821FA73C21072BA700F9A408 /* PopUpViewController.swift */,
+				82E49319211067B100D494B2 /* CurrencyConversionViewController.swift */,
 			);
 			path = Maine;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				82007E5B20FB675A009A1EF4 /* Splash.swift in Sources */,
 				82007E4B20FB64C5009A1EF4 /* Loader.swift in Sources */,
 				821FA73B2107060800F9A408 /* AllCountrysPopUpTableViewCell.swift in Sources */,
+				82E4931A211067B100D494B2 /* CurrencyConversionViewController.swift in Sources */,
 				82007E1A20FB6031009A1EF4 /* GlobalManager.swift in Sources */,
 				82007E0C20FB5EA6009A1EF4 /* ExampleService.swift in Sources */,
 				82007E6520FB7245009A1EF4 /* TerminalServicesViewController.swift in Sources */,

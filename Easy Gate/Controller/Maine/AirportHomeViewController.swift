@@ -11,11 +11,12 @@ import UIKit
 class AirportHomeViewController: UIViewController {
     
    // MARK: - Properites
-     var CollectionViewNamesArray = ["Passenger Terminal" , "Cargo Terminal" , "General Aviation" , "General Info"]
+     var CollectionViewNamesArray = ["Passenger Terminal" , "Cargo Terminal" , "General Aviation" , "General Info" , "Attractions" , "Currency Conversion" ]
     
     // MARK: - IBOutlet
     @IBOutlet weak var AirportHomeColliction: UICollectionView!
-   
+    @IBOutlet weak var NewsImage: UIView!
+    
     // MARK: - IBAction
     @IBAction func Back(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)}
@@ -25,11 +26,31 @@ class AirportHomeViewController: UIViewController {
      let controller = sb.instantiateViewController(withIdentifier: "Home")
      self.navigationController?.pushViewController(controller, animated: true)
     }
+    
+        @IBAction func SkySskyscannercanner(_ sender: AnyObject) {
+            if let url = URL(string: "https://www.skyscanner.net") {
+                UIApplication.shared.open(url, options: [:])
+            }
+        }
+   
+    @IBAction func FlightRadar(_ sender: UIButton) {
+        if let url = URL(string: "https://www.flightradar24.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
+    @IBAction func Uber(_ sender: UIButton) {
+        if let url = URL(string: "https://www.uber.com") {
+            UIApplication.shared.open(url, options: [:])
+        }
+    }
+    
    // MARK: - ViewLifeCycle
      override func viewDidLoad() {
         super.viewDidLoad()
        AirportHomeColliction.delegate = self
        AirportHomeColliction.dataSource = self
+       NewsImage.layer.cornerRadius = NewsImage.frame.height / 4
      }
 }
 
@@ -83,4 +104,3 @@ extension AirportHomeViewController : UICollectionViewDataSource , UICollectionV
            self.navigationController?.pushViewController(controller, animated: true)
          }
 }
-

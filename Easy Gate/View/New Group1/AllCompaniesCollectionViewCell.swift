@@ -9,6 +9,8 @@
 import UIKit
 
 class AllCompaniesCollectionViewCell: UICollectionViewCell {
+   
+    // MARK: - IBOutle
     @IBOutlet weak var Imge: UIImageView!
     
 }

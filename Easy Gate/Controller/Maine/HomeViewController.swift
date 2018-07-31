@@ -27,9 +27,7 @@ class HomeViewController: UIViewController {
         PopUp.view.frame.size.width = self.view.frame.size.width / 1
         PopUp.view.frame.size.height = self.view.frame.size.height / 1
         self.view.addSubview(PopUp.view)
-        PopUp.didMove(toParentViewController: self)
-        
-    }
+        PopUp.didMove(toParentViewController: self) }
     
     // MARK: - ViewLifeCycle
     override func viewDidLoad() {
@@ -38,7 +36,6 @@ class HomeViewController: UIViewController {
        AirportsSearchResulteTableView.delegate = self
        AirportsSearchResulteTableView.dataSource = self
         self.AirportsSearchResulteTableView.isHidden = true
-
        filterdArray = AllAirport
     }
     }
@@ -53,7 +50,6 @@ extension HomeViewController: UISearchBarDelegate {
             self.AirportsSearchResulteTableView.isHidden = true
         } else {
             self.AirportsSearchResulteTableView.isHidden = false
-
         }
         filterdArray = filterdArray.sorted(by: {$0 < $1})
         AirportsSearchResulteTableView.reloadData()
@@ -64,11 +60,9 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return filterdArray.count
     }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return  AirportsSearchResulteTableView.frame.size.height / 4.65
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! AirportsSearchResulteControllerTableViewCell
         cell.AirportName.text =  filterdArray[indexPath.row]
@@ -80,7 +74,6 @@ extension HomeViewController : UITableViewDelegate , UITableViewDataSource{
        // cell.AirportName.font = UIFont.systemFont(ofSize: 90.scaledWidth()) 
         return cell
     }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let sb = UIStoryboard(name: "Maine", bundle: nil)
         let controller = sb.instantiateViewController(withIdentifier: "AirportHome")

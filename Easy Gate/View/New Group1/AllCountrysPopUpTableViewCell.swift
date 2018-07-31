@@ -9,12 +9,14 @@
 import UIKit
 
 class AllCountrysPopUpTableViewCell: UITableViewCell {
-
+   
+    // MARK: - IBOutle
     @IBOutlet weak var CountryName: ScalableLabel!
-  
+   
+    // MARK: - ViewLifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+      // Initialization code
         self.selectionStyle = .none
 
     }

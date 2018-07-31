@@ -9,6 +9,8 @@
 import UIKit
 
 class TerminalServicesCollectionViewCell: UICollectionViewCell {
+   
+    // MARK: - IBOutle
     @IBOutlet weak var imge: UIImageView!
     @IBOutlet weak var Label: UILabel!
 

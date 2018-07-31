@@ -41,10 +41,16 @@ extension PopUpViewController : UITableViewDelegate , UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if  tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        }
+        else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
         let sb = UIStoryboard(name: "Maine", bundle: nil)
         let controller = sb.instantiateViewController(withIdentifier: "Home")
-        self.navigationController?.pushViewController(controller, animated: true)
-        var select = indexPath
-        print(select)
+        self.navigationController?.pushViewController(controller, animated: false)
+        tableView.deselectRow(at: indexPath, animated: true)
+        print(AllAirport[indexPath.row])
     }
 }

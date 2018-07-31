@@ -9,8 +9,11 @@
 import UIKit
 
 class AirportsSearchResulteControllerTableViewCell: UITableViewCell {
+   
+    // MARK: - IBOutle
     @IBOutlet weak var AirportName: UILabel!
- 
+    
+ // MARK: - ViewLifeCycle
     override func awakeFromNib() {
         super.awakeFromNib()
        self.selectionStyle = .none
